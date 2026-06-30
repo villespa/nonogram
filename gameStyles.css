@@ -1,0 +1,181 @@
+* {
+    font-family: "Fira Sans", sans-serif, monospace;
+    font-variant-numeric: oldstyle-nums;
+}
+
+#nonogram-table-goal {
+    border-color: transparent;
+    border-width: 0px;
+}
+
+#menu-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#menu-button {
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    transition: transform 0.2s ease-in;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.6);
+    transform: scale(0.7);
+}
+
+#menu-button:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+
+.cell {
+    border: 1px solid black;
+    background-color: #ffffff;
+    text-align: center;
+    color: transparent;
+    user-select: none;
+    position: relative;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.cell.error-icon::before {
+    content: "⚠";
+    position: absolute;
+    top: 19px;
+    right: 2px;
+    font-size: 10px;
+    color: rgb(249, 0, 0);
+}
+
+#nonogram-grid {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    user-select: none;
+}
+
+.nonogram-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    user-select: none;
+}
+
+.timer-div {
+    position: absolute;
+    right: 10vw;
+    top: 80vh;
+}
+
+.hint-cell {
+    border: 2px solid black;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hint-corner {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+}
+
+.hint-column {
+    width: 30px;
+    height: 40px;
+    vertical-align: bottom;
+    border: 2px solid black;
+}
+
+.hint-row {
+    width: 40px;
+    height: 30px;
+    text-align: right;
+    border: 2px solid black;
+
+}
+
+.control-buttons {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.control-button {
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    transition: transform 0.2s ease-in;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.6);
+    transform: scale(0.7);
+}
+
+.control-button:enabled:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.counters {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.hint-counter {
+    text-align: center;
+}
+
+.error-counter {
+    text-align: center;
+}
+
+.auto-correction {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.auto-correction label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.auto-correction {
+    cursor: pointer;
+}
+
+.cell.error-marked {
+    border: 3px solid red;
+    box-shadow: 0 0 8px rgb(156, 0, 0);
+}
+
+.progress-container {
+    position: fixed;
+    top: 46%;
+    right: 20px;
+    transform: translateY(-50%);
+    transform: translateX(-200%);
+}
+
+.progress-div {
+    transform: rotate(90deg);
+}
+
+#progress-bar {
+    height: 1.7rem;
+    width: 290px;
+    position: relative;
+}
+
+#progress-bar:before {
+    content: 'progreso: ' attr(value);
+    font-size: 10px;
+    position: absolute;
+    top: 6.5px;
+    left: 5px;
+}

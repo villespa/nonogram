@@ -1,0 +1,60 @@
+* {
+    font-family: Verdana, sans-serif, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    text-align: center;
+    animation: gradient-shift 3s ease infinite;
+
+}
+
+#title-container {
+    background-color:antiquewhite;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+
+#start-button {
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    transition: transform 0.21s ease-out;
+    transition: background-color 0.21s ease-out;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+#start-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: burlywood;
+}
+
+.selector {
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+}
+
+.selector:hover {
+    cursor: pointer;
+}
+
+.selector::picker(select) {
+    border: none;
+    border-radius: 8px;
+    border-color: transparent;
+}

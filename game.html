@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Nonogram Game</title>
+    <link rel="stylesheet" href="gameStyles.css"/>
+</head>
+<body>
+    <div id="game-container">
+
+        <div id="menu-button-container">
+            <button id="menu-button">volver al menu</button>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-div">
+                <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+        </div>
+        
+        <div class="counters">
+            <div class="hint-counter">
+                <p>hints: <span id="pista-counter">0</span></p>
+            </div>
+
+            <div class="error-counter">
+                <p>errores: <span id="error-counter">0</span></p>
+            </div>
+        </div>
+        <div class="auto-correction">
+            <label>
+                <input type="checkbox" id="auto-correction-chkbx">
+                correccion automatica
+            </label>
+        </div>
+
+        <div id="nonogram-grid">
+            <!-- aqui va la tabla generada -->
+        </div>
+        <div class="timer-div">
+            <p> timer: 
+                <span id="timer">00</span>
+                <span data-active="true" id="seconds" hidden="true">0</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="control-buttons">
+        <button class="control-button" id="verify-button">Verificar</button>
+        <button class="control-button" id="solve-button">Resolver</button>
+        <button class="control-button" id="reset-button">Reiniciar</button>
+        <button class="control-button" id="hint-button">Dar pista</button>
+    </div>
+
+    <script src="gameScript.js"></script>
+</body>
+</html>
