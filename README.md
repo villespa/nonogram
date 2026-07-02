@@ -1,1 +1,21 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ASCV5QPA)
+# Puzzle Nonograma
+
+A browser-based Nonogram (Picross) puzzle game built with plain HTML, CSS, and JavaScript.
+
+## Features
+
+- Select difficulty: fácil, intermedio, difícil
+- Select grid size, from 5x5 up to 20x20
+- Verify your solution, get hints, auto-correction, and a progress bar
+- Timer and error counter
+
+## How to run
+
+No build step or dependencies are required. Just open `index.html` in your browser:
+
+Or serve the folder with any static file server, then navigate to `index.html`.
+
+## Project structure
+
+- `index.html` / `script.js` / `styles.css` — main menu (difficulty and size selection)
+- `game.html` / `gameScript.js` / `gameStyles.css` — the puzzle board and game logic
